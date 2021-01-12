@@ -1,11 +1,11 @@
 DEBUG_FLAG=1
 
-#$(CC)=gcc
+$(CC)=gcc
 
-if DEBUG_FLAG:
-	@echo "SUCESSFUL"
-else:
-	@echo "FAILURE"
+#if DEBUG_FLAG:
+#	@echo "SUCESSFUL"
+#else:
+#	@echo "FAILURE"
 
 #$(CC)=gcc
 
