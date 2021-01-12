@@ -1,0 +1,35 @@
+DEBUG_FLAG=1
+
+#$(CC)=gcc
+
+if DEBUG_FLAG:
+	@echo "SUCESSFUL"
+else:
+	@echo "FAILURE"
+
+#$(CC)=gcc
+
+final: main.o insertionsort.o selectionsort.o quicksort.o mergesort.o bubblesort.o
+	$(CC) main.o insertionsort.o selectionsort.o quicksort.o mergesort.o bubblesort.o -o final
+
+main.o: main.c
+	$(CC) -c main.c
+
+insertionsort.o: insertionsort.c
+	$(CC) -c insertionsort.c
+
+selectionsort.o: selectionsort.c
+	$(CC) -c selectionsort.c
+
+mergesort.o: mergesort.c
+	$(CC) -c mergesort.c
+
+quicksort.o: quicksort.c
+	$(CC) -c quicksort.c
+
+bubblesort.o: bubblesort.c
+	$(CC) -c bubblesort.c
+
+clean:
+	rm *.o final
+
