@@ -2,7 +2,7 @@
 #define size 10 //size of the array
 
 
-void printarray(int a[],int ,int);
+//void printarray(int a[],int ,int);
 void mergesort(int a[],int ,int ,int );
 void divide(int a[],int ,int );
 int main()
@@ -15,9 +15,12 @@ int main()
  {
   scanf("%d",&a[i]);
   }
- divide(a,0,size-1);
- printf("the sorted elements are");
- printarray(a,0,size);
+ divide(a,0,n-1);
+ printf("\nthe sorted elements are:");
+ for(i=0;i<n;i++)
+ {
+  printf("%d ",a[i]);
+  }
 }
 
 
@@ -79,12 +82,3 @@ void mergesort(int arr[],int l,int m,int r)
 }
 
 
-void printarray(int a[],int start,int end)
-{
- int i;
-  for(i=start;i<end;i++)
-  {
-   printf("%d ",a[i]);
-  }
- printf("\n");
-}
