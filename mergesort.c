@@ -7,10 +7,11 @@ void mergesort(int a[],int ,int ,int );
 void divide(int a[],int ,int );
 int main()
 {
- int a[size],i;
- printf("enter 10 elements to the array");
- //collecting array elements
- for(i=0;i<size;i++)
+ int a[size],i,n;
+ printf("enter the size of an array:");
+ scanf("%d",&n);
+ printf("\nenter the elements:");
+ for(i=0;i<n;i++)
  {
   scanf("%d",&a[i]);
   }
