@@ -1,10 +1,12 @@
 $(CC)=gcc
 
 bubble:
-	$(CC) bubblesort.c -o out
+	$(CC) bubblesort.c -o out 
+
 
 insertion:
 	$(CC) insertionsort.c -o out 
+
 
 selection:
 	$(CC) selectionsort.c -o out
@@ -15,6 +17,3 @@ merge:
 quick:
 	$(CC) quicksort.c -o out
 
-clean:
-	rm *.o 
- 
